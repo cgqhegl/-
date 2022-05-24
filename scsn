@@ -31,7 +31,7 @@ def img_xz(html, keyword):
         fp.write(pic.content)
         fp.close()
         i += 1
-    print('-'*20)
+    print('-'*40)
     print('程序已经结束！请寻找images文件夹！！！')
 
 while True:
@@ -43,7 +43,7 @@ while True:
         url = 'http://image.baidu.com/search/flip?tn=baiduimage&ie=utf-8&word=' + scsn + '&ct=201326592&v=flip'
         result = requests.get(url)
         img_xz(result.text, scsn)
-        print('-' * 20)
+        print('-' * 40)
         print('1：继续/0：退出！')
         a = int(input('请输入：'))
         if a == 0:
