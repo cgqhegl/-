@@ -26,7 +26,7 @@ def img_xz(html, keyword):
         except requests.exceptions.ConnectionError:
             print('【错误】当前图片无法下载')
             continue
-        dir = './images/' + keyword + '_' + str(i) + '.png'
+        dir = './images/' + keyword + '_' + str(i) + '.jpg'
         fp = open(dir, 'wb')
         fp.write(pic.content)
         fp.close()
