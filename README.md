@@ -19,3 +19,5 @@ python其他版本：pip install requests
 pyinstaller -F main.py
 ```
 ### ！注意！这里的main.py是自己想要打包的文件名！！！
+
+### 仅供学习参考！！！
